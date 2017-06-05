@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Switch
+        android:id="@+id/startservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Service" />
+
+    <RelativeLayout
+        android:layout_below="@id/startservice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Choose Time That  you want to stay connected"/>
+
+
+       <TimePicker
+           android:layout_alignParentBottom="true"
+           android:id="@+id/timePick"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </TimePicker>
+
+    </RelativeLayout>
+
+</RelativeLayout>
